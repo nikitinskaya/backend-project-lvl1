@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/nikitinskaya/backend-project-lvl1.git"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "type": "module",
   "author": "Vera Nikitinskaya",
   "license": "ISC",
