@@ -2,5 +2,4 @@
 
 import even from '../src/games/even.js';
 
-// greet();
 even();
