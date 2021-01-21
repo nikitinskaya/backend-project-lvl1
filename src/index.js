@@ -9,9 +9,10 @@ const runGame = (gameDescription, generateRound, rounds = 3) => {
     const [question, answer] = generateRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ').trim().toLowerCase();
+    const correctAnswer = answer.toString().toLowerCase();
 
-    if (userAnswer !== answer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
