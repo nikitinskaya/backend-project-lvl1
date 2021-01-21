@@ -9,7 +9,7 @@ const Utils = {
     if (!n2) {
       return n1;
     }
-    return this.getGcd(n2, n1 % n2);
+    return Utils.getGcd(n2, n1 % n2);
   },
   isPrime(num) {
     if (num <= 1) return false;
